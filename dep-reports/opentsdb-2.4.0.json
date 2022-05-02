@@ -1,0 +1,70 @@
+{
+    "metadata": {
+        "groupId": "net.opentsdb",
+        "version": "2.4.0",
+        "builder": "maven",
+        "n_dep": 37,
+        "d_dep": 3,
+        "n_art": 2,
+        "level1": 24,
+        "level2": 10,
+        "level3": 3,
+        "language": {
+            "Others": 0.7310924369747899,
+            "Bash": 0.008403361344537815,
+            "Java": 0.2592113768584357,
+            "Python": 0.001292824822236587
+        }
+    },
+    "dependency": {
+        "net.opentsdb:opentsdb:jar:2.4.0": {
+            "com.google.guava:guava:jar:18.0": {},
+            "com.fasterxml.jackson.core:jackson-annotations:jar:2.9.5": {},
+            "com.fasterxml.jackson.core:jackson-core:jar:2.9.5": {},
+            "com.fasterxml.jackson.core:jackson-databind:jar:2.9.5": {},
+            "io.netty:netty:jar:3.10.6.Final": {},
+            "com.stumbleupon:async:jar:1.4.0": {},
+            "org.slf4j:slf4j-api:jar:1.7.7": {},
+            "org.apache.commons:commons-math3:jar:3.4.1": {},
+            "org.apache.commons:commons-jexl:jar:2.1.1": {
+                "commons-logging:commons-logging:jar:1.1.1": {}
+            },
+            "org.jgrapht:jgrapht-core:jar:0.9.1": {},
+            "com.esotericsoftware.kryo:kryo:jar:2.21.1": {
+                "com.esotericsoftware.reflectasm:reflectasm:jar:1.07-shaded": {
+                    "org.ow2.asm:asm:jar:4.0": {}
+                },
+                "com.esotericsoftware.minlog:minlog:jar:1.2": {}
+            },
+            "org.slf4j:log4j-over-slf4j:jar:1.7.7": {},
+            "ch.qos.logback:logback-core:jar:1.0.13": {},
+            "ch.qos.logback:logback-classic:jar:1.0.13": {},
+            "org.hamcrest:hamcrest-core:jar:1.3": {},
+            "org.javassist:javassist:jar:3.21.0-GA": {},
+            "junit:junit:jar:4.11": {},
+            "org.mockito:mockito-core:jar:1.9.5": {},
+            "org.objenesis:objenesis:jar:1.3": {},
+            "org.powermock:powermock-api-mockito:jar:1.5.4": {
+                "org.mockito:mockito-all:jar:1.9.5": {},
+                "org.powermock:powermock-api-support:jar:1.5.4": {
+                    "org.powermock:powermock-core:jar:1.5.4": {},
+                    "org.powermock:powermock-reflect:jar:1.5.4": {}
+                }
+            },
+            "org.powermock:powermock-module-junit4:jar:1.5.4": {
+                "org.powermock:powermock-module-junit4-common:jar:1.5.4": {}
+            },
+            "com.google.gwt:gwt-user:jar:2.6.0": {
+                "javax.validation:validation-api:jar:1.0.0.GA": {},
+                "javax.validation:validation-api:jar:1.0.0.GA-sources": {},
+                "org.json:json:jar:20090211": {}
+            },
+            "net.opentsdb:opentsdb_gwt_theme:jar:1.0.0": {},
+            "org.hbase:asynchbase:jar:1.8.2": {
+                "com.google.protobuf:protobuf-java:jar:2.5.0": {}
+            },
+            "org.apache.zookeeper:zookeeper:jar:3.4.6": {}
+        },
+        "net.opentsdb:opentsdb_gwt_theme:jar:1.0.0": {}
+    }
+}

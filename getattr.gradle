@@ -1,0 +1,50 @@
+import groovy.json.JsonOutput
+import org.gradle.api.internal.artifacts.dsl.LazyPublishArtifact
+
+def executed = false
+gradle.rootProject {
+    task getProjectAttr { task ->
+        task.doLast {
+            if (executed) {
+                // we configured this task for all projects,
+                // but we only want to run it once
+                return
+            }
+
+            executed = true
+
+            rootProject.allprojects { Project p ->
+		println '<========>'
+		println p.getPath()
+		/*
+		 * not all project configuration contain field 'archives'
+		 * if not, just ignore
+		 */
+		try {
+		    configurations.archives.allArtifacts.each { PublishArtifact ar ->
+		        println '--------'
+		        println ar.getName()
+		        println p.group
+ 		        println ar.getExtension()
+		        println p.version
+		    }
+		} catch (MissingPropertyException e) {;}
+	    }
+	    println '<========>'
+        }
+    }
+
+    task getMetadata { task ->
+	task.doLast {
+	    if (executed) {
+		return
+	    }
+	    executed = true
+
+	    println '[GROUP]'
+	    println rootProject.group
+	    println '[VERSION]'
+	    println rootProject.version
+	}
+    }
+}

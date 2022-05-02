@@ -1,0 +1,1017 @@
+{
+    "metadata": {
+        "groupId": "io.zipkin.zipkin2",
+        "version": "2.11.8",
+        "builder": "maven",
+        "n_dep": 182,
+        "d_dep": 3,
+        "n_art": 16,
+        "level1": 38,
+        "level2": 92,
+        "level3": 120,
+        "language": {
+            "Others": 0.4187604690117253,
+            "Java": 0.576214405360134,
+            "Bash": 0.005025125628140704
+        }
+    },
+    "dependency": {
+        "io.zipkin.zipkin2:parent:pom:2.11.8": {
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+            "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+            "com.google.code.gson:gson:jar:2.8.5": {},
+            "com.squareup.okio:okio:jar:1.16.0": {},
+            "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-reflect:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-core:jar:2.0.0-beta.5": {}
+                },
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                "org.mockito:mockito-core:jar:2.23.0": {
+                    "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                    "org.objenesis:objenesis:jar:2.6": {},
+                    "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+                }
+            },
+            "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                "org.objenesis:objenesis:jar:2.1": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-collector-parent:pom:2.11.8": {
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+            "com.google.code.gson:gson:jar:2.8.5": {}
+        },
+        "io.zipkin.zipkin2:zipkin-collector:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "org.mockito:mockito-core:jar:2.23.0": {
+                "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                "org.objenesis:objenesis:jar:2.6": {},
+                "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+            },
+            "org.hamcrest:hamcrest-core:jar:1.3": {},
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-junit:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "io.zipkin.zipkin2:zipkin-collector:jar:2.11.8": {
+                "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                    "com.google.code.gson:gson:jar:2.8.5": {}
+                },
+                "org.mockito:mockito-core:jar:2.23.0": {
+                    "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                    "org.objenesis:objenesis:jar:2.6": {},
+                    "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+                },
+                "org.hamcrest:hamcrest-core:jar:1.3": {},
+                "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                    "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                    "com.google.code.gson:gson:jar:2.8.5": {},
+                    "com.squareup.okio:okio:jar:1.16.0": {},
+                    "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {},
+                    "com.esotericsoftware.kryo:kryo:jar:2.24.0": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "com.squareup.okhttp3:mockwebserver:jar:3.11.0": {
+                "com.squareup.okhttp3:okhttp:jar:3.11.0": {
+                    "com.squareup.okio:okio:jar:1.16.0": {}
+                }
+            },
+            "com.squareup.moshi:moshi:jar:1.7.0": {
+                "com.squareup.okio:okio:jar:1.16.0": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-storage-parent:pom:2.11.8": {
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-storage-cassandra:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "com.google.auto.value:auto-value-annotations:jar:1.6.2": {},
+            "com.google.auto.value:auto-value:jar:1.6.2": {},
+            "com.datastax.cassandra:cassandra-driver-core:jar:3.6.0": {
+                "io.netty:netty-handler:jar:4.0.56.Final": {
+                    "io.netty:netty-buffer:jar:4.0.56.Final": {},
+                    "io.netty:netty-transport:jar:4.0.56.Final": {},
+                    "io.netty:netty-codec:jar:4.0.56.Final": {}
+                },
+                "com.google.guava:guava:jar:19.0": {},
+                "io.dropwizard.metrics:metrics-core:jar:3.2.2": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {},
+                "com.github.jnr:jnr-ffi:jar:2.1.7": {
+                    "com.github.jnr:jffi:jar:1.2.16": {},
+                    "com.github.jnr:jffi:jar:1.2.16-native": {},
+                    "org.ow2.asm:asm:jar:5.0.3": {},
+                    "org.ow2.asm:asm-commons:jar:5.0.3": {},
+                    "org.ow2.asm:asm-analysis:jar:5.0.3": {},
+                    "org.ow2.asm:asm-tree:jar:5.0.3": {},
+                    "org.ow2.asm:asm-util:jar:5.0.3": {},
+                    "com.github.jnr:jnr-x86asm:jar:1.0.2": {}
+                },
+                "com.github.jnr:jnr-posix:jar:3.0.44": {
+                    "com.github.jnr:jnr-constants:jar:0.9.9": {}
+                }
+            },
+            "com.datastax.cassandra:cassandra-driver-mapping:jar:3.6.0": {},
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "org.mockito:mockito-core:jar:2.23.0": {
+                "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                "org.objenesis:objenesis:jar:2.6": {},
+                "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+            },
+            "org.hamcrest:hamcrest-core:jar:1.3": {},
+            "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {
+                "org.apache.logging.log4j:log4j-api:jar:2.11.1": {},
+                "org.apache.logging.log4j:log4j-core:jar:2.11.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "org.testcontainers:testcontainers:jar:1.9.1": {
+                "org.slf4j:slf4j-ext:jar:1.7.25": {},
+                "org.jetbrains:annotations:jar:15.0": {},
+                "javax.annotation:javax.annotation-api:jar:1.3.1": {},
+                "com.google.code.findbugs:jsr305:jar:3.0.2": {},
+                "org.apache.commons:commons-compress:jar:1.16.1": {
+                    "org.objenesis:objenesis:jar:2.6": {}
+                },
+                "javax.xml.bind:jaxb-api:jar:2.3.0": {},
+                "org.rnorth.duct-tape:duct-tape:jar:1.0.7": {},
+                "org.rnorth.visible-assertions:visible-assertions:jar:2.1.1": {
+                    "net.java.dev.jna:jna:jar:4.5.1": {}
+                },
+                "org.rnorth:tcp-unix-socket-proxy:jar:1.0.2": {
+                    "com.kohlschutter.junixsocket:junixsocket-native-common:jar:2.0.4": {},
+                    "com.kohlschutter.junixsocket:junixsocket-common:jar:2.0.4": {}
+                },
+                "net.java.dev.jna:jna-platform:jar:4.5.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-storage-cassandra-v1:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin-storage-cassandra:jar:2.11.8": {
+                "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                    "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                    "com.google.code.gson:gson:jar:2.8.5": {},
+                    "com.squareup.okio:okio:jar:1.16.0": {},
+                    "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {},
+                    "com.esotericsoftware.kryo:kryo:jar:2.24.0": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "com.google.auto.value:auto-value-annotations:jar:1.6.2": {},
+                "com.google.auto.value:auto-value:jar:1.6.2": {},
+                "com.datastax.cassandra:cassandra-driver-core:jar:3.6.0": {
+                    "io.netty:netty-handler:jar:4.0.56.Final": {},
+                    "com.google.guava:guava:jar:19.0": {},
+                    "io.dropwizard.metrics:metrics-core:jar:3.2.2": {},
+                    "org.slf4j:slf4j-api:jar:1.7.25": {},
+                    "com.github.jnr:jnr-ffi:jar:2.1.7": {},
+                    "com.github.jnr:jnr-posix:jar:3.0.44": {}
+                },
+                "com.datastax.cassandra:cassandra-driver-mapping:jar:3.6.0": {},
+                "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                    "com.google.code.gson:gson:jar:2.8.5": {}
+                },
+                "org.mockito:mockito-core:jar:2.23.0": {
+                    "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                    "org.objenesis:objenesis:jar:2.6": {},
+                    "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+                },
+                "org.hamcrest:hamcrest-core:jar:1.3": {},
+                "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {
+                    "org.apache.logging.log4j:log4j-api:jar:2.11.1": {},
+                    "org.apache.logging.log4j:log4j-core:jar:2.11.1": {},
+                    "org.slf4j:slf4j-api:jar:1.7.25": {}
+                },
+                "org.testcontainers:testcontainers:jar:1.9.1": {
+                    "org.slf4j:slf4j-ext:jar:1.7.25": {},
+                    "org.jetbrains:annotations:jar:15.0": {},
+                    "javax.annotation:javax.annotation-api:jar:1.3.1": {},
+                    "com.google.code.findbugs:jsr305:jar:3.0.2": {},
+                    "org.apache.commons:commons-compress:jar:1.16.1": {},
+                    "javax.xml.bind:jaxb-api:jar:2.3.0": {},
+                    "org.rnorth.duct-tape:duct-tape:jar:1.0.7": {},
+                    "org.rnorth.visible-assertions:visible-assertions:jar:2.1.1": {},
+                    "org.rnorth:tcp-unix-socket-proxy:jar:1.0.2": {},
+                    "net.java.dev.jna:jna-platform:jar:4.5.1": {},
+                    "org.slf4j:slf4j-api:jar:1.7.25": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "com.google.auto.value:auto-value-annotations:jar:1.6.2": {},
+            "com.google.auto.value:auto-value:jar:1.6.2": {},
+            "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {
+                "org.apache.logging.log4j:log4j-api:jar:2.11.1": {},
+                "org.apache.logging.log4j:log4j-core:jar:2.11.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "org.mockito:mockito-core:jar:2.23.0": {
+                "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                "org.objenesis:objenesis:jar:2.6": {},
+                "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+            },
+            "org.hamcrest:hamcrest-core:jar:1.3": {},
+            "org.assertj:assertj-guava:jar:3.2.0": {},
+            "org.testcontainers:testcontainers:jar:1.9.1": {
+                "org.slf4j:slf4j-ext:jar:1.7.25": {},
+                "org.jetbrains:annotations:jar:15.0": {},
+                "javax.annotation:javax.annotation-api:jar:1.3.1": {},
+                "com.google.code.findbugs:jsr305:jar:3.0.2": {},
+                "org.apache.commons:commons-compress:jar:1.16.1": {
+                    "org.objenesis:objenesis:jar:2.6": {}
+                },
+                "javax.xml.bind:jaxb-api:jar:2.3.0": {},
+                "org.rnorth.duct-tape:duct-tape:jar:1.0.7": {},
+                "org.rnorth.visible-assertions:visible-assertions:jar:2.1.1": {
+                    "net.java.dev.jna:jna:jar:4.5.1": {}
+                },
+                "org.rnorth:tcp-unix-socket-proxy:jar:1.0.2": {
+                    "com.kohlschutter.junixsocket:junixsocket-native-common:jar:2.0.4": {},
+                    "com.kohlschutter.junixsocket:junixsocket-common:jar:2.0.4": {}
+                },
+                "net.java.dev.jna:jna-platform:jar:4.5.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-storage-elasticsearch:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "com.squareup.okhttp3:okhttp:jar:3.11.0": {
+                "com.squareup.okio:okio:jar:1.16.0": {}
+            },
+            "com.google.auto.value:auto-value-annotations:jar:1.6.2": {},
+            "com.google.auto.value:auto-value:jar:1.6.2": {},
+            "com.squareup.moshi:moshi:jar:1.7.0": {
+                "com.squareup.okio:okio:jar:1.16.0": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "com.google.guava:guava:jar:19.0": {},
+            "com.squareup.okhttp3:mockwebserver:jar:3.11.0": {
+                "com.squareup.okhttp3:okhttp:jar:3.11.0": {
+                    "com.squareup.okio:okio:jar:1.16.0": {}
+                }
+            },
+            "com.squareup.okhttp3:okhttp-tls:jar:3.11.0": {
+                "org.bouncycastle:bcprov-jdk15on:jar:1.50": {}
+            },
+            "com.squareup.okhttp3:logging-interceptor:jar:3.11.0": {},
+            "org.testcontainers:testcontainers:jar:1.9.1": {
+                "org.slf4j:slf4j-ext:jar:1.7.25": {},
+                "org.jetbrains:annotations:jar:15.0": {},
+                "javax.annotation:javax.annotation-api:jar:1.3.1": {},
+                "com.google.code.findbugs:jsr305:jar:3.0.2": {},
+                "org.apache.commons:commons-compress:jar:1.16.1": {
+                    "org.objenesis:objenesis:jar:2.6": {}
+                },
+                "javax.xml.bind:jaxb-api:jar:2.3.0": {},
+                "org.rnorth.duct-tape:duct-tape:jar:1.0.7": {},
+                "org.rnorth.visible-assertions:visible-assertions:jar:2.1.1": {
+                    "net.java.dev.jna:jna:jar:4.5.1": {}
+                },
+                "org.rnorth:tcp-unix-socket-proxy:jar:1.0.2": {
+                    "com.kohlschutter.junixsocket:junixsocket-native-common:jar:2.0.4": {},
+                    "com.kohlschutter.junixsocket:junixsocket-common:jar:2.0.4": {}
+                },
+                "net.java.dev.jna:jna-platform:jar:4.5.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-storage-mysql-v1:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "org.jooq:jooq:jar:3.11.5": {
+                "javax.xml.bind:jaxb-api:jar:2.2.12": {},
+                "javax.xml.bind:jaxb-api:jar:2.3.1": {
+                    "javax.activation:javax.activation-api:jar:1.2.0": {}
+                }
+            },
+            "javax.annotation:javax.annotation-api:jar:1.3.1": {},
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "org.mariadb.jdbc:mariadb-java-client:jar:2.3.0": {},
+            "org.mockito:mockito-core:jar:2.23.0": {
+                "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                "org.objenesis:objenesis:jar:2.6": {},
+                "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+            },
+            "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {
+                "org.apache.logging.log4j:log4j-api:jar:2.11.1": {},
+                "org.apache.logging.log4j:log4j-core:jar:2.11.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "org.testcontainers:mysql:jar:1.9.1": {
+                "org.testcontainers:jdbc:jar:1.9.1": {
+                    "org.testcontainers:database-commons:jar:1.9.1": {}
+                }
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-collector-kafka:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin-collector:jar:2.11.8": {
+                "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                    "com.google.code.gson:gson:jar:2.8.5": {}
+                },
+                "org.mockito:mockito-core:jar:2.23.0": {
+                    "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                    "org.objenesis:objenesis:jar:2.6": {},
+                    "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+                },
+                "org.hamcrest:hamcrest-core:jar:1.3": {},
+                "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                    "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                    "com.google.code.gson:gson:jar:2.8.5": {},
+                    "com.squareup.okio:okio:jar:1.16.0": {},
+                    "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {},
+                    "com.esotericsoftware.kryo:kryo:jar:2.24.0": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "org.apache.kafka:kafka-clients:jar:2.0.0": {
+                "org.lz4:lz4-java:jar:1.4.1": {},
+                "org.xerial.snappy:snappy-java:jar:1.1.7.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {
+                "org.apache.logging.log4j:log4j-api:jar:2.11.1": {},
+                "org.apache.logging.log4j:log4j-core:jar:2.11.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "com.github.charithe:kafka-junit:jar:4.1.2": {
+                "org.apache.curator:curator-test:jar:4.0.0": {
+                    "org.apache.zookeeper:zookeeper:jar:3.5.3-beta": {}
+                },
+                "org.apache.kafka:kafka_2.12:jar:2.0.0": {
+                    "com.fasterxml.jackson.core:jackson-databind:jar:2.9.6": {},
+                    "net.sf.jopt-simple:jopt-simple:jar:5.0.4": {},
+                    "com.yammer.metrics:metrics-core:jar:2.2.0": {},
+                    "org.scala-lang:scala-library:jar:2.12.6": {},
+                    "org.scala-lang:scala-reflect:jar:2.12.6": {},
+                    "com.typesafe.scala-logging:scala-logging_2.12:jar:3.9.0": {},
+                    "com.101tec:zkclient:jar:0.10": {}
+                },
+                "com.google.guava:guava:jar:23.3-jre": {
+                    "com.google.code.findbugs:jsr305:jar:1.3.9": {},
+                    "com.google.errorprone:error_prone_annotations:jar:2.0.18": {},
+                    "com.google.j2objc:j2objc-annotations:jar:1.1": {},
+                    "org.codehaus.mojo:animal-sniffer-annotations:jar:1.14": {}
+                },
+                "org.junit.jupiter:junit-jupiter-api:jar:5.1.0-M1": {
+                    "org.opentest4j:opentest4j:jar:1.0.0": {},
+                    "org.junit.platform:junit-platform-commons:jar:1.1.0-M1": {}
+                }
+            },
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-collector-rabbitmq:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin-collector:jar:2.11.8": {
+                "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                    "com.google.code.gson:gson:jar:2.8.5": {}
+                },
+                "org.mockito:mockito-core:jar:2.23.0": {
+                    "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                    "org.objenesis:objenesis:jar:2.6": {},
+                    "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+                },
+                "org.hamcrest:hamcrest-core:jar:1.3": {},
+                "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                    "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                    "com.google.code.gson:gson:jar:2.8.5": {},
+                    "com.squareup.okio:okio:jar:1.16.0": {},
+                    "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {},
+                    "com.esotericsoftware.kryo:kryo:jar:2.24.0": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "com.rabbitmq:amqp-client:jar:4.8.3": {
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {
+                "org.apache.logging.log4j:log4j-api:jar:2.11.1": {},
+                "org.apache.logging.log4j:log4j-core:jar:2.11.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "org.testcontainers:testcontainers:jar:1.9.1": {
+                "org.slf4j:slf4j-ext:jar:1.7.25": {},
+                "org.jetbrains:annotations:jar:15.0": {},
+                "javax.annotation:javax.annotation-api:jar:1.3.1": {},
+                "com.google.code.findbugs:jsr305:jar:3.0.2": {},
+                "org.apache.commons:commons-compress:jar:1.16.1": {
+                    "org.objenesis:objenesis:jar:2.6": {}
+                },
+                "javax.xml.bind:jaxb-api:jar:2.3.0": {},
+                "org.rnorth.duct-tape:duct-tape:jar:1.0.7": {},
+                "org.rnorth.visible-assertions:visible-assertions:jar:2.1.1": {
+                    "net.java.dev.jna:jna:jar:4.5.1": {}
+                },
+                "org.rnorth:tcp-unix-socket-proxy:jar:1.0.2": {
+                    "com.kohlschutter.junixsocket:junixsocket-native-common:jar:2.0.4": {},
+                    "com.kohlschutter.junixsocket:junixsocket-common:jar:2.0.4": {}
+                },
+                "net.java.dev.jna:jna-platform:jar:4.5.1": {},
+                "org.slf4j:slf4j-api:jar:1.7.25": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {},
+            "com.rabbitmq:amqp-client:jar:5.4.3": {}
+        },
+        "io.zipkin.zipkin2:benchmarks:jar:2.11.8": {
+            "com.google.guava:guava:jar:19.0": {},
+            "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                "org.objenesis:objenesis:jar:2.1": {}
+            },
+            "org.openjdk.jmh:jmh-core:jar:1.21": {
+                "net.sf.jopt-simple:jopt-simple:jar:4.6": {},
+                "org.apache.commons:commons-math3:jar:3.2": {}
+            },
+            "org.openjdk.jmh:jmh-generator-annprocess:jar:1.21": {},
+            "io.zipkin.java:zipkin-server:jar:2.11.8": {
+                "org.springframework.boot:spring-boot-starter-web:jar:2.1.0.RELEASE": {
+                    "org.springframework.boot:spring-boot-starter:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-starter-json:jar:2.1.0.RELEASE": {},
+                    "org.springframework:spring-web:jar:5.1.2.RELEASE": {},
+                    "org.springframework:spring-webmvc:jar:5.1.2.RELEASE": {}
+                },
+                "org.springframework.boot:spring-boot-starter-log4j2:jar:2.1.0.RELEASE": {
+                    "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {},
+                    "org.apache.logging.log4j:log4j-core:jar:2.11.1": {},
+                    "org.apache.logging.log4j:log4j-jul:jar:2.11.1": {},
+                    "org.slf4j:jul-to-slf4j:jar:1.7.25": {}
+                },
+                "org.springframework.boot:spring-boot-starter-undertow:jar:2.1.0.RELEASE": {
+                    "io.undertow:undertow-core:jar:2.0.14.Final": {},
+                    "io.undertow:undertow-servlet:jar:2.0.14.Final": {},
+                    "io.undertow:undertow-websockets-jsr:jar:2.0.14.Final": {},
+                    "org.glassfish:javax.el:jar:3.0.0": {},
+                    "javax.servlet:javax.servlet-api:jar:4.0.1": {}
+                },
+                "org.springframework.boot:spring-boot-starter-actuator:jar:2.1.0.RELEASE": {
+                    "org.springframework.boot:spring-boot-starter:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "io.micrometer:micrometer-core:jar:1.1.0": {}
+                },
+                "org.springframework.boot:spring-boot-configuration-processor:jar:2.1.0.RELEASE": {},
+                "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                    "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                    "com.google.code.gson:gson:jar:2.8.5": {},
+                    "com.squareup.okio:okio:jar:1.16.0": {},
+                    "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {},
+                    "com.esotericsoftware.kryo:kryo:jar:2.24.0": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.zipkin2:zipkin-collector:jar:2.11.8": {
+                    "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {},
+                    "io.zipkin.zipkin2:zipkin:jar:2.11.8": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.java:zipkin-autoconfigure-ui:jar:2.11.8": {
+                    "org.springframework.boot:spring-boot-starter-web:jar:2.1.0.RELEASE": {},
+                    "javax.servlet:javax.servlet-api:jar:4.0.1": {},
+                    "io.zipkin.java:zipkin-ui:jar:2.11.8": {},
+                    "org.jsoup:jsoup:jar:1.11.3": {},
+                    "org.springframework:spring-test:jar:5.1.2.RELEASE": {},
+                    "org.springframework.boot:spring-boot-starter-undertow:jar:2.1.0.RELEASE": {},
+                    "com.squareup.okhttp3:okhttp:jar:3.11.0": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.java:zipkin-autoconfigure-storage-cassandra:jar:2.11.8": {
+                    "io.zipkin.zipkin2:zipkin-storage-cassandra-v1:jar:2.11.8": {},
+                    "io.zipkin.brave.cassandra:brave-instrumentation-cassandra-driver:jar:0.10.0": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "com.datastax.cassandra:cassandra-driver-core:jar:3.6.0-shaded": {
+                    "com.google.guava:guava:jar:19.0": {},
+                    "io.dropwizard.metrics:metrics-core:jar:4.0.3": {},
+                    "org.slf4j:slf4j-api:jar:1.7.25": {},
+                    "com.github.jnr:jnr-ffi:jar:2.1.7": {},
+                    "com.github.jnr:jnr-posix:jar:3.0.44": {}
+                },
+                "com.datastax.cassandra:cassandra-driver-mapping:jar:3.6.0": {},
+                "io.zipkin.java:zipkin-autoconfigure-storage-cassandra3:jar:2.11.8": {
+                    "io.zipkin.zipkin2:zipkin-storage-cassandra:jar:2.11.8": {},
+                    "io.zipkin.zipkin2:zipkin-storage-cassandra-v1:jar:2.11.8": {},
+                    "io.zipkin.brave.cassandra:brave-instrumentation-cassandra-driver:jar:0.10.0": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.java:zipkin-autoconfigure-storage-elasticsearch:jar:2.11.8": {
+                    "io.zipkin.zipkin2:zipkin-storage-elasticsearch:jar:2.11.8": {},
+                    "com.squareup.okhttp3:okhttp:jar:3.11.0": {},
+                    "com.squareup.okhttp3:logging-interceptor:jar:3.11.0": {},
+                    "io.zipkin.brave:brave-instrumentation-okhttp3:jar:5.4.2": {},
+                    "com.squareup.okhttp3:mockwebserver:jar:3.11.0": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.java:zipkin-autoconfigure-storage-mysql:jar:2.11.8": {
+                    "io.zipkin.zipkin2:zipkin-storage-mysql-v1:jar:2.11.8": {},
+                    "org.mariadb.jdbc:mariadb-java-client:jar:2.3.0": {},
+                    "com.zaxxer:HikariCP:jar:3.2.0": {},
+                    "io.zipkin.brave:brave:jar:5.4.2": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.java:zipkin-autoconfigure-collector-kafka:jar:2.11.8": {
+                    "io.zipkin.zipkin2:zipkin-collector-kafka:jar:2.11.8": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.java:zipkin-autoconfigure-collector-rabbitmq:jar:2.11.8": {
+                    "io.zipkin.zipkin2:zipkin-collector-rabbitmq:jar:2.11.8": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.java:zipkin-autoconfigure-metrics-prometheus:jar:2.11.8": {
+                    "org.springframework.boot:spring-boot-starter-actuator:jar:2.1.0.RELEASE": {},
+                    "io.micrometer:micrometer-registry-prometheus:jar:1.1.0": {},
+                    "org.springframework.boot:spring-boot-starter-undertow:jar:2.1.0.RELEASE": {},
+                    "org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1": {},
+                    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "io.zipkin.brave:brave:jar:5.4.2": {
+                    "io.zipkin.reporter2:zipkin-reporter:jar:2.7.9": {}
+                },
+                "io.zipkin.brave:brave-instrumentation-okhttp3:jar:5.4.2": {
+                    "io.zipkin.brave:brave-instrumentation-http:jar:5.4.2": {},
+                    "io.zipkin.brave:brave:jar:5.4.2": {}
+                },
+                "io.zipkin.brave:brave-context-log4j2:jar:5.4.2": {},
+                "io.zipkin.brave.cassandra:brave-instrumentation-cassandra-driver:jar:0.10.0": {
+                    "io.zipkin.brave:brave:jar:5.4.2": {}
+                },
+                "org.springframework.boot:spring-boot-starter-test:jar:2.1.0.RELEASE": {
+                    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE": {},
+                    "org.springframework.boot:spring-boot-test-autoconfigure:jar:2.1.0.RELEASE": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {},
+                    "org.hamcrest:hamcrest-library:jar:1.3": {},
+                    "org.skyscreamer:jsonassert:jar:1.5.0": {},
+                    "org.springframework:spring-core:jar:5.1.2.RELEASE": {},
+                    "org.springframework:spring-test:jar:5.1.2.RELEASE": {},
+                    "org.xmlunit:xmlunit-core:jar:2.6.2": {}
+                },
+                "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                    "com.google.code.gson:gson:jar:2.8.5": {}
+                },
+                "com.jayway.jsonpath:json-path:jar:2.4.0": {
+                    "net.minidev:json-smart:jar:2.3": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "io.zipkin.proto3:zipkin-proto3:jar:0.1.0": {},
+            "com.google.protobuf:protobuf-java:jar:3.6.1": {},
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-collector-scribe:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin-collector:jar:2.11.8": {
+                "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                    "com.google.code.gson:gson:jar:2.8.5": {}
+                },
+                "org.mockito:mockito-core:jar:2.23.0": {
+                    "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                    "org.objenesis:objenesis:jar:2.6": {},
+                    "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+                },
+                "org.hamcrest:hamcrest-core:jar:1.3": {},
+                "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                    "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                    "com.google.code.gson:gson:jar:2.8.5": {},
+                    "com.squareup.okio:okio:jar:1.16.0": {},
+                    "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {},
+                    "com.esotericsoftware.kryo:kryo:jar:2.24.0": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "com.facebook.swift:swift-service:jar:0.23.1": {
+                "com.facebook.swift:swift-annotations:jar:0.23.1": {},
+                "com.facebook.swift:swift-codec:jar:0.23.1": {
+                    "com.thoughtworks.paranamer:paranamer:jar:2.8": {},
+                    "jp.skypencil.guava:helper:jar:1.0.1": {}
+                },
+                "org.apache.thrift:libthrift:jar:0.9.3": {
+                    "org.slf4j:slf4j-api:jar:1.7.12": {}
+                },
+                "com.google.guava:guava:jar:18.0": {},
+                "com.facebook.nifty:nifty-core:jar:0.23.0": {},
+                "io.airlift:units:jar:0.119": {
+                    "javax.validation:validation-api:jar:1.1.0.Final": {}
+                },
+                "io.airlift:log:jar:0.119": {},
+                "io.netty:netty:jar:3.10.5.Final": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        },
+        "io.zipkin.zipkin2:zipkin-collector-kafka08:jar:2.11.8": {
+            "io.zipkin.zipkin2:zipkin-collector:jar:2.11.8": {
+                "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                    "com.google.code.gson:gson:jar:2.8.5": {}
+                },
+                "org.mockito:mockito-core:jar:2.23.0": {
+                    "net.bytebuddy:byte-buddy:jar:1.9.0": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.0": {},
+                    "org.objenesis:objenesis:jar:2.6": {},
+                    "net.bytebuddy:byte-buddy:jar:1.9.3": {},
+                    "net.bytebuddy:byte-buddy-agent:jar:1.9.3": {}
+                },
+                "org.hamcrest:hamcrest-core:jar:1.3": {},
+                "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                    "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                    "com.google.code.gson:gson:jar:2.8.5": {},
+                    "com.squareup.okio:okio:jar:1.16.0": {},
+                    "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {},
+                    "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {},
+                    "com.esotericsoftware.kryo:kryo:jar:2.24.0": {},
+                    "junit:junit:jar:4.12": {},
+                    "org.assertj:assertj-core:jar:3.11.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "org.apache.kafka:kafka_2.11:jar:0.8.2.2": {
+                "org.scala-lang.modules:scala-xml_2.11:jar:1.0.2": {},
+                "com.yammer.metrics:metrics-core:jar:2.2.0": {
+                    "org.slf4j:slf4j-api:jar:1.7.2": {}
+                },
+                "net.sf.jopt-simple:jopt-simple:jar:3.2": {},
+                "org.scala-lang.modules:scala-parser-combinators_2.11:jar:1.0.2": {},
+                "com.101tec:zkclient:jar:0.3": {
+                    "log4j:log4j:jar:1.2.14": {}
+                },
+                "org.scala-lang:scala-library:jar:2.11.5": {},
+                "org.apache.kafka:kafka-clients:jar:0.8.2.2": {
+                    "org.xerial.snappy:snappy-java:jar:1.1.1.7": {},
+                    "net.jpountz.lz4:lz4:jar:1.2.0": {}
+                },
+                "org.apache.zookeeper:zookeeper:jar:3.4.6": {
+                    "jline:jline:jar:0.9.94": {},
+                    "io.netty:netty:jar:3.7.0.Final": {}
+                }
+            },
+            "io.zipkin.zipkin2:zipkin:jar:2.11.8": {
+                "org.jvnet:animal-sniffer-annotation:jar:1.0": {},
+                "com.google.code.gson:gson:jar:2.8.5": {},
+                "com.squareup.okio:okio:jar:1.16.0": {},
+                "org.powermock:powermock-module-junit4:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-module-junit4-common:jar:2.0.0-beta.5": {},
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.powermock:powermock-api-mockito2:jar:2.0.0-beta.5": {
+                    "org.powermock:powermock-api-support:jar:2.0.0-beta.5": {},
+                    "org.mockito:mockito-core:jar:2.23.0": {}
+                },
+                "com.esotericsoftware.kryo:kryo:jar:2.24.0": {
+                    "com.esotericsoftware.minlog:minlog:jar:1.2": {},
+                    "org.objenesis:objenesis:jar:2.1": {}
+                },
+                "junit:junit:jar:4.12": {
+                    "org.hamcrest:hamcrest-core:jar:1.3": {}
+                },
+                "org.assertj:assertj-core:jar:3.11.1": {}
+            },
+            "io.zipkin.zipkin2:zipkin:test-jar:2.11.8-tests": {
+                "com.google.code.gson:gson:jar:2.8.5": {}
+            },
+            "junit:junit:jar:4.12": {
+                "org.hamcrest:hamcrest-core:jar:1.3": {}
+            },
+            "org.assertj:assertj-core:jar:3.11.1": {}
+        }
+    }
+}
